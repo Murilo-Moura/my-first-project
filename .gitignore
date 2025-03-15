@@ -148,12 +148,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.dmypy.json
+.dmypy.jsonSS
 dmypy.json
 
 # Pyre type checker
 .pyre/
-.vscode/settings.json
+.vscode/settings.jsonS
 
 # pytype static type analyzer
 .pytype/
@@ -170,3 +170,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.gitignore
+.gitignore
