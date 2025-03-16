@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df = pd.read_csv('../vehicles.csv', sep=',')  # lendo os dados
+df = pd.read_csv('/vehicles.csv', sep=',')  # lendo os dados
 
 # convertendo a coluna price para float
 df['price'] = df['price'].astype(float)
@@ -16,12 +16,11 @@ df['model_year'] = df['model_year'].fillna(
 df['model_year'] = df['model_year'].astype(int)
 
 df['cylinders'] = df['cylinders'].fillna(
-    0)   # preenchendo os valores nulos com 0
+    0)  # preenchendo os valores nulos com 0
 # convertendo a coluna cylinders para int
 df['cylinders'] = df['cylinders'].astype(int)
 
-# preenchendo os valores nulos com 0
-df['odometer'] = df['odometer'].fillna(0)
+df['odometer'] = df['odometer'].fillna(0)  # preenchendo os valores nulos com 0
 # convertendo a coluna odometer para float
 df['odometer'] = df['odometer'].astype(float)
 
