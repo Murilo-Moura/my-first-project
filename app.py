@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df = pd.read_csv('/vehicles.csv', sep=',')  # lendo os dados
+df = pd.read_csv('/vehicles.csv')  # lendo os dados
 
 # convertendo a coluna price para float
 df['price'] = df['price'].astype(float)
